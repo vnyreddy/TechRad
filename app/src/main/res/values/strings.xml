@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">TechRad</string>
+
+    <string name="group_name">Category</string>
+    <string name="number_of_songs">Songs</string>
+    <string name="chennal_label">List of Available Chennals</string>
+    <string name="your_google_api_key">AIzaSyD--Hz_BxdftFqZdoe8AAZ8tqOLVBvxWC4</string>
+</resources>
