@@ -13,9 +13,9 @@ import com.vinay.wizdem.techrad.Adapters.SongViewAdapter;
 import com.vinay.wizdem.techrad.R;
 import com.vinay.wizdem.techrad.Utils.Utils;
 
-/**
- * Created by vinay_1 on 6/11/2017.
- */
+// Created by vinay_1 on 6/11/2017.
+
+
 
 public class OpenYouTubePlayerActivity extends YouTubeBaseActivity implements YouTubePlayer.OnInitializedListener {
     private String API_KEY = "AIzaSyD--Hz_BxdftFqZdoe8AAZ8tqOLVBvxWC4";

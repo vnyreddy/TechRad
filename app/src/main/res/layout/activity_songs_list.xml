@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <FrameLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/fragment_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+<!--    <fragment
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        class="com.vinay.wizdem.techrad.Fragments.YoutubeViewFragment"
+        android:id="@+id/fragment"/>-->
+  <!--  <com.google.android.youtube.player.YouTubePlayerFragment
+        android:id="@+id/youtube_player_1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        class="com.vinay.wizdem.techrad.Activities.OpenYouTubePlayerActivity"
+        />-->
+    <fragment
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        class="com.vinay.wizdem.techrad.Fragments.SongsListFragment"
+        android:id="@+id/fragment2"/>
+
+</LinearLayout>

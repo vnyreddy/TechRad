@@ -8,4 +8,6 @@ import com.vinay.wizdem.techrad.Models.Example;
 
 public class Utils {
     public static Example modelData;
+    public static int my_adapter_position;
+    public static int songs_view_adapter_position;
 }

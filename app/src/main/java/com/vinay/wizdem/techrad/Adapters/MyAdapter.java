@@ -12,6 +12,7 @@ import android.widget.TextView;
 import com.vinay.wizdem.techrad.Activities.SongViewActivity;
 import com.vinay.wizdem.techrad.Models.Example;
 import com.vinay.wizdem.techrad.R;
+import com.vinay.wizdem.techrad.Utils.Utils;
 
 import java.util.ArrayList;
 import java.util.List;

@@ -15,10 +15,13 @@ import android.widget.Toast;
 import com.google.android.youtube.player.YouTubeInitializationResult;
 import com.google.android.youtube.player.YouTubePlayer;
 import com.google.android.youtube.player.YouTubePlayerView;
-import com.vinay.wizdem.techrad.Activities.OpenYouTubePlayerActivity;
+//import com.vinay.wizdem.techrad.Activities.OpenYouTubePlayerActivity;
 import com.vinay.wizdem.techrad.Activities.SongViewActivity;
+import com.vinay.wizdem.techrad.Models.MessageEvent;
 import com.vinay.wizdem.techrad.R;
 import com.vinay.wizdem.techrad.Utils.Utils;
+
+import org.greenrobot.eventbus.EventBus;
 
 import static android.content.ContentValues.TAG;
 
@@ -83,12 +86,15 @@ public class SongViewAdapter extends RecyclerView.Adapter<SongViewAdapter.MyView
             itemView.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View view) {
-                    String API_KEY = "AIzaSyD--Hz_BxdftFqZdoe8AAZ8tqOLVBvxWC4";
-                    Context context = view.getContext();
-                    Intent intent = new Intent( context, OpenYouTubePlayerActivity.class);
+                   // String API_KEY = "AIzaSyD--Hz_BxdftFqZdoe8AAZ8tqOLVBvxWC4";
+                   // Context context = view.getContext();
+                    EventBus.getDefault().post(new MessageEvent(adapter_position,getAdapterPosition()));
+                    /*Intent intent = new Intent( context, OpenYouTubePlayerActivity.class);
                     intent.putExtra("CHANNEL_POSITION", adapter_position);
                     intent.putExtra("SONG_POSITION",getAdapterPosition());
-                    context.startActivity(intent);
+                    context.startActivity(intent);*/
+
+
 
                     /*Intent intent = YouTubeStandalonePlayer.createVideoIntent((Activity) context, "AIzaSyD--Hz_BxdftFqZdoe8AAZ8tqOLVBvxWC4", "WkFI_3w7dVQ");
                     context.startActivity(intent);*/
